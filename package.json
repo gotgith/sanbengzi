@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/gotgith/sanbengzi/issues"
   },
-  "homepage": "https://github.com/gotgith/sanbengzi#readme"
+  "homepage": "https://github.com/gotgith/sanbengzi#readme",
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
 }
