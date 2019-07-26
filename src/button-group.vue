@@ -9,7 +9,7 @@
         mounted() {
             for (let node of this.$el.children){
                 let name = node.nodeName.toLowerCase()
-                if (name !== 'button'){
+                if (name !== 'vm'){
                     console.warn(`g-button-group的子元素应该全是g-button，但是你写的是${name}`)
                 }
             }
