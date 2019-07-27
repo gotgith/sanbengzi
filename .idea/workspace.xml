@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3513f6c5-5313-4bec-8bb3-966642c7d837" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/button.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/button.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -68,14 +64,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/button.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1431">
+            <state relative-caret-position="270">
               <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
               <folding>
                 <element signature="e#28#49#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="55" lean-forward="true" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -110,6 +115,7 @@
         <option value="$PROJECT_DIR$/src/button.vue" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/test/button.test.js" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -132,16 +138,6 @@
             <path>
               <item name="sanbengzi-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="sanbengzi-demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sanbengzi-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sanbengzi-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sanbengzi-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sanbengzi-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -198,7 +194,7 @@
       <workItem from="1564038838211" duration="665000" />
       <workItem from="1564040512301" duration="11430000" />
       <workItem from="1564106411821" duration="29042000" />
-      <workItem from="1564211801105" duration="5414000" />
+      <workItem from="1564211801105" duration="7503000" />
     </task>
     <task id="LOCAL-00001" summary="npm install vue">
       <created>1563975448183</created>
@@ -309,7 +305,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51916000" />
+    <option name="totallyTimeSpent" value="54005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -449,11 +445,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/button.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1431">
+        <state relative-caret-position="270">
           <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding>
             <element signature="e#28#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="55" lean-forward="true" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
         </state>
       </provider>
     </entry>
