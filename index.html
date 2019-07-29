@@ -40,15 +40,20 @@
 </head>
 <body>
 <div id="app">
+<!--    <div class="box">-->
+<!--        &lt;!&ndash;    :disabled="true" 和直接写 disabled效果是一样的。&ndash;&gt;-->
+<!--        <g-input value="张三" :disabled="true"></g-input>-->
+<!--        <g-input value="李四" readonly></g-input>-->
+<!--        <g-input value="阿五"></g-input>-->
+<!--    </div>-->
     <div class="box">
-        <!--    :disabled="true" 和直接写 disabled效果是一样的。-->
-        <g-input value="张三" :disabled="true"></g-input>
-        <g-input value="李四" readonly></g-input>
-        <g-input value="阿五"></g-input>
+        <g-input v-model="message"></g-input>
+        <p>{{message}}</p>
+        <button @click="message+=1">+1</button>
     </div>
-    <div class="box">
-        <g-input value="毛六" error="姓名不能少于两个字"></g-input>
-    </div>
+<!--    <div class="box">-->
+<!--        <g-input value="周八" error="姓名不能少于两个字"></g-input>-->
+<!--    </div>-->
 
 
     <div class="box">
