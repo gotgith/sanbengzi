@@ -26,17 +26,30 @@
             widthPc: {type: Object, validator,}
         },
         data() {return {gutter: 0}},
+        methods: {
+            creatClasses(obj, str=''){
+                if (!obj){return []}
+                let array = []
+                if (obj.span){
+                    array.push(`col-${str}${obj.span}`)
+                }
+                if (obj.offset){
+                    array.push(`offset-${str}${obj.offset}`)
+                }
+                return array
+            }
+        },
         computed: {
             colClass() {
                 let {span, offset, ipad,narrowPc, pc, widthPc} = this
-                let phoneClass = []
+                let creatClasses = this.creatClasses
                 return [
-                    span && `col-${span}`,
-                    offset && `offset-${offset}`,
-                    ...(ipad ? [`col-ipad-${ipad.span}`]:[]),
-                    ...(narrowPc ? [`col-narrow-pc-${narrowPc.span}`]:[]),
-                    ...(pc ? [`col-pc-${pc.span}`]:[]),
-                    ...(widthPc ? [`col-width-pc-${widthPc.span}`]:[])
+                    ...creatClasses({span, offset}),
+                    ...creatClasses(ipad, 'ipad-'),
+                    ...creatClasses(narrowPc, 'narrow-pc-'),
+                    ...creatClasses(pc, 'pc-'),
+                    ...creatClasses(widthPc,'width-pc-')
+
                 ]
             },
             colStyle() {
