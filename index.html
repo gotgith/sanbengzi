@@ -27,134 +27,145 @@
         }
 
         #app {
-            margin: 20px;
+
         }
 
         body {
             font-size: var(--font-size);
         }
     </style>
-    <style>
-        .box{
-            margin: 20px;
-        }
-    </style>
 </head>
+
 <body>
 <style>
     .demo {
-        background: #ddd;
         border: 1px solid #666;
-        height: 100px;
+        min-height: 100px;
     }
 </style>
 <div id="app">
+    <g-layout style="height: 100vh">
+        <g-sider class="demo">side</g-sider>
+        <g-layout>
+            <g-header class="demo">header</g-header>
+            <g-content class="demo">content</g-content>
+        </g-layout>
+        <g-footer class="demo">footer</g-footer>
+    </g-layout>
 
 
-    <g-row>
-        <g-col span="23" offset="1" :narrow-pc="{span:12, offset:12}">
-            <div class="demo"></div>
-        </g-col>
-
-        <g-col span="8" :narrow-pc="{span:8}">
-            <div class="demo"></div>
-        </g-col>
-        <g-col span="8" :narrow-pc="{span:8}">
-            <div class="demo"></div>
-        </g-col>
-        <g-col span="8" :narrow-pc="{span:8}">
-            <div class="demo"></div>
-        </g-col>
-        <g-col span="24" :narrow-pc="{span:8}">
-            <div class="demo"></div>
-        </g-col>
-        <g-col span="24" :narrow-pc="{span:8}">
-            <div class="demo"></div>
-        </g-col>
-        <g-col span="24" :narrow-pc="{span:8}">
-            <div class="demo"></div>
-        </g-col>
-    </g-row>
-
-
-    <div style="border:1px solid black">
-        <g-row gutter="20">
-            <g-col span="24"
-                   :ipad="{span:8}"
-                   :narrow-pc="{span:4}"
-                   :pc="{span:2}"
-                   :width-pc="{span:1}"
-
-            >
-                1
-            </g-col>
-            <g-col span="24"
-                   :ipad="{span:16}"
-                   :narrow-pc="{span:20}"
-                   :pc="{span:22}"
-                   :width-pc="{span:23}"
-            >
-                11
-            </g-col>
-        </g-row>
-        <g-row gutter="20">
-            <g-col></g-col>
-            <g-col></g-col>
-            <g-col></g-col>
-        </g-row>
-        <g-row gutter="20">
-            <g-col></g-col>
-            <g-col></g-col>
-            <g-col></g-col>
-            <g-col></g-col>
-        </g-row>
-        <g-row>
-            <g-col span="2" ></g-col>
-            <g-col span="20" offset="2"></g-col>
-        </g-row>
-        <g-row>
-            <g-col span="4"></g-col>
-            <g-col span="16" offset="4"></g-col>
-        </g-row>
-    </div>
-
-
-
-
-<!--    <div class="box">-->
-<!--        &lt;!&ndash;    :disabled="true" 和直接写 disabled效果是一样的。&ndash;&gt;-->
-<!--        <g-input value="张三" :disabled="true"></g-input>-->
-<!--        <g-input value="李四" readonly></g-input>-->
-<!--        <g-input value="阿五"></g-input>-->
-<!--    </div>-->
-    <div class="box">
-        <g-input v-model="message"></g-input>
-        <p>{{message}}</p>
-        <button @click="message+=1">+1</button>
-    </div>
-<!--    <div class="box">-->
-<!--        <g-input value="周八" error="姓名不能少于两个字"></g-input>-->
-<!--    </div>-->
-
-
-    <div class="box">
-        <g-button :loading="loading1" @click="loading1= !loading1">
-            按钮
-        </g-button>
-        <g-button icon="settings" :loading="loading2" @click="loading2 = !loading2">
-            按钮
-        </g-button>
-        <g-button icon="settings" icon-position="right" :loading="loading3" @click="loading3=!loading3">
-            按钮
-        </g-button>
-
-        <g-button-group>
-            <g-button icon="left">上一页</g-button>
-            <g-button>更多</g-button>
-            <g-button icon="right" icon-position="right">下一页</g-button>
-        </g-button-group>
-    </div>
+    <script src="./src/app.js"></script>
 </div>
-<script src="./src/app.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+<!--    <g-row>-->
+<!--        <g-col span="23" offset="1" :narrow-pc="{span:12, offset:12}">-->
+<!--            <div class="demo"></div>-->
+<!--        </g-col>-->
+
+<!--        <g-col span="8" :narrow-pc="{span:8}">-->
+<!--            <div class="demo"></div>-->
+<!--        </g-col>-->
+<!--        <g-col span="8" :narrow-pc="{span:8}">-->
+<!--            <div class="demo"></div>-->
+<!--        </g-col>-->
+<!--        <g-col span="8" :narrow-pc="{span:8}">-->
+<!--            <div class="demo"></div>-->
+<!--        </g-col>-->
+<!--        <g-col span="24" :narrow-pc="{span:8}">-->
+<!--            <div class="demo"></div>-->
+<!--        </g-col>-->
+<!--        <g-col span="24" :narrow-pc="{span:8}">-->
+<!--            <div class="demo"></div>-->
+<!--        </g-col>-->
+<!--        <g-col span="24" :narrow-pc="{span:8}">-->
+<!--            <div class="demo"></div>-->
+<!--        </g-col>-->
+<!--    </g-row>-->
+
+
+<!--    <div style="border:1px solid black">-->
+<!--        <g-row gutter="20">-->
+<!--            <g-col span="24"-->
+<!--                   :ipad="{span:8}"-->
+<!--                   :narrow-pc="{span:4}"-->
+<!--                   :pc="{span:2}"-->
+<!--                   :width-pc="{span:1}"-->
+
+<!--            >-->
+<!--                1-->
+<!--            </g-col>-->
+<!--            <g-col span="24"-->
+<!--                   :ipad="{span:16}"-->
+<!--                   :narrow-pc="{span:20}"-->
+<!--                   :pc="{span:22}"-->
+<!--                   :width-pc="{span:23}"-->
+<!--            >-->
+<!--                11-->
+<!--            </g-col>-->
+<!--        </g-row>-->
+<!--        <g-row gutter="20">-->
+<!--            <g-col></g-col>-->
+<!--            <g-col></g-col>-->
+<!--            <g-col></g-col>-->
+<!--        </g-row>-->
+<!--        <g-row gutter="20">-->
+<!--            <g-col></g-col>-->
+<!--            <g-col></g-col>-->
+<!--            <g-col></g-col>-->
+<!--            <g-col></g-col>-->
+<!--        </g-row>-->
+<!--        <g-row>-->
+<!--            <g-col span="2" ></g-col>-->
+<!--            <g-col span="20" offset="2"></g-col>-->
+<!--        </g-row>-->
+<!--        <g-row>-->
+<!--            <g-col span="4"></g-col>-->
+<!--            <g-col span="16" offset="4"></g-col>-->
+<!--        </g-row>-->
+<!--    </div>-->
+
+
+
+
+<!--&lt;!&ndash;    <div class="box">&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash;    :disabled="true" 和直接写 disabled效果是一样的。&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <g-input value="张三" :disabled="true"></g-input>&ndash;&gt;-->
+<!--&lt;!&ndash;        <g-input value="李四" readonly></g-input>&ndash;&gt;-->
+<!--&lt;!&ndash;        <g-input value="阿五"></g-input>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--    <div class="box">-->
+<!--        <g-input v-model="message"></g-input>-->
+<!--        <p>{{message}}</p>-->
+<!--        <button @click="message+=1">+1</button>-->
+<!--    </div>-->
+<!--&lt;!&ndash;    <div class="box">&ndash;&gt;-->
+<!--&lt;!&ndash;        <g-input value="周八" error="姓名不能少于两个字"></g-input>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+
+
+<!--    <div class="box">-->
+<!--        <g-button :loading="loading1" @click="loading1= !loading1">-->
+<!--            按钮-->
+<!--        </g-button>-->
+<!--        <g-button icon="settings" :loading="loading2" @click="loading2 = !loading2">-->
+<!--            按钮-->
+<!--        </g-button>-->
+<!--        <g-button icon="settings" icon-position="right" :loading="loading3" @click="loading3=!loading3">-->
+<!--            按钮-->
+<!--        </g-button>-->
+
+<!--        <g-button-group>-->
+<!--            <g-button icon="left">上一页</g-button>-->
+<!--            <g-button>更多</g-button>-->
+<!--            <g-button icon="right" icon-position="right">下一页</g-button>-->
+<!--        </g-button-group>-->
+<!--    </div>-->
+
+
