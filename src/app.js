@@ -47,8 +47,7 @@ new Vue({
                         console.log('用户说知道了')
                     }
                 },
-                autoClose: true,
-                autoCloseDelay: 3,
+                autoClose: 3
             })
         }
     }

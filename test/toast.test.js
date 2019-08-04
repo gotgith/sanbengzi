@@ -62,6 +62,4 @@ describe('Toast', () => {
             expect(vm.$el.classList.contains('position-bottom')).to.eq(true)
         })
     })
-
-
 })
