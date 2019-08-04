@@ -36,17 +36,20 @@ new Vue({
         message: 'hi'
     },
     created(){
-        this.$toast('我是Message',{
-            closeButton:{
-                text: '知道了',
-                callback(){
-                    console.log('用户说知道了')
-                }
-            }
-        })
+
     },
     methods: {
         showToast () {
+            this.$toast('智商充值点',{
+                closeButton:{
+                    text: '充值',
+                    callback(){
+                        console.log('用户说知道了')
+                    }
+                },
+                autoClose: true,
+                autoCloseDelay: 3,
+            })
         }
     }
 })
