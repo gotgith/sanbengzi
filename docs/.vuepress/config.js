@@ -1,4 +1,5 @@
 module.exports = {
+    base:'/sanbengzi/',
     title: 'sky-wheel UI',
     description: '实用的 UI 框架 ',
     themeConfig: {
@@ -16,7 +17,14 @@ module.exports = {
             },
             {
                 title: '组件',
-                children: [ '/components/button' ]
+                children: [ '/components/button' ,
+                    '/components/grid',
+                    '/components/input',
+                    '/components/layout',
+                    '/components/popover',
+                    '/components/tabs',
+                    '/components/toast'
+                ]
             },
         ]
     }
