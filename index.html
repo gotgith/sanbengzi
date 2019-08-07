@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>三蹦子</title>
+    <title>sky-wheel UI框架</title>
     <style>
         * {
             margin: 0;
@@ -41,13 +41,35 @@
 
 </style>
 <div id="app">
-
-
-    <g-button icon="settings">haha</g-button>
-    <button @click="showToast">点我</button>
+    <g-tabs :selected.sync="selectedTab">
+        <g-tabs-head class="JH">
+            <template slot="actions">
+                <button>Hello</button>
+            </template>
+            <g-tabs-item name="women">
+                <g-icon name="settings"></g-icon>美女
+            </g-tabs-item>
+            <g-tabs-item name="finance" disabled>
+                财经
+            </g-tabs-item>
+            <g-tabs-item name="sports">
+                体育
+            </g-tabs-item>
+        </g-tabs-head>
+        <g-tabs-body>
+            <g-tabs-pane name="women">
+                美女相关
+            </g-tabs-pane>
+            <g-tabs-pane name="finance">
+                财经相关
+            </g-tabs-pane>
+            <g-tabs-pane name="sports">
+                体育相关
+            </g-tabs-pane>
+        </g-tabs-body>
+    </g-tabs>
 
     <script src="./src/app.js"></script>
-
 </div>
 </body>
 </html>
