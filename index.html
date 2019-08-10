@@ -41,12 +41,15 @@
 
 </style>
 <div id="app">
-    <g-popover>
-        <template slot="content">
-            <div>popover内容</div>
-        </template>
-        <button>点我</button>
-    </g-popover>
+    <div style="overflow: hidden; padding-top: 100px">
+        <g-popover position="right" trigger="hover">
+            <template slot="content">
+                <div>popover内容</div>
+            </template>
+            <button>点我</button>
+        </g-popover>
+    </div>
+
 
     <script src="./src/app.js"></script>
 </div>
