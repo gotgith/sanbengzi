@@ -23,7 +23,7 @@ sky-wheel UI 是一个简单实用的 UI 框架。
     ```
     3. 引入 sanbengzi
     ```
-    import {Button, ButtonGroup, Icon} from 'sanbengzi'
+    import {Button, ButtonGroup, Icon...} from 'sanbengzi'
     ```
 
 ## 有哪些轮子
