@@ -1,4 +1,4 @@
-# 三蹦子 - 一个 Vue UI 组件
+# sky-wheel 一个 Vue UI 组件
 [![Build Status](https://travis-ci.org/gotgith/sanbengzi.svg?branch=master)](https://travis-ci.org/gotgith/sanbengzi)
 ## 介绍
 这是一个 UI 框架，是我在学习 Vue 的过程中做的。
